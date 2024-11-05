@@ -1,0 +1,55 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main background with image */
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.838) 50%, rgba(0, 0, 0, 0.838) 50%), url(2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* Aligns the logo to the left and menu to the right */
+}
+
+/* Headings styling */
+h1 {
+    color: #f1430e;
+}
+
+h2 {
+    color: #e4dddd;
+}
+
+/* Button styling */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #f1430e; /* Orange color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #d0370b; /* Darker shade for hover effect */
+}

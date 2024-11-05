@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main background with image */
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.838) 50%, rgba(0, 0, 0, 0.838) 50%), url(2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Set font for the body */
+}
+
+.contact-container {
+    max-width: 400px;
+    margin: auto;
+    background: black; /* Form color set to black */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: orange; /* Heading color set to orange */
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    color: green; /* Label color set to green */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: white; /* Input background set to white */
+}
+
+textarea {
+    height: 100px; /* Set a height for the textarea */
+}
+
+/* Link styled as a button */
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: orange; /* Button color set to orange */
+    color: white;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px; /* Add some margin above the button */
+}
+
+.button:hover {
+    background-color: #e67e22; /* Darker shade of orange for hover effect */
+}
+
+/* Navbar styling */
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* Aligns the logo to the left and menu to the right */
+}

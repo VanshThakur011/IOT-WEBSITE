@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 350px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+}
+
+.form h2 {
+    font-family: sans-serif;
+    color: #000; /* Change font color to black */
+    background-color: #ff7200; /* Change background color to orange */
+    font-size: 24px;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 12px;
+}
+
+.form input {
+    width: 250px;
+    height: 35px;
+    background-color: #fff; /* Change background color to white */
+    border-bottom: 1px solid #ff7200;
+    border: none;
+    color: #000; /* Change font color to black */
+    font-size: 16px;
+    margin-top: 30px;
+    border-radius: 10px; /* Make the input box edges rounded */
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #000;
+}
+
+.btnn {
+    width: 100%;
+    height: 45px;
+    background: #ff7200;
+    border: none;
+    margin-top: 40px;
+    font-size: 20px;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    text-align: center;
+}
+
+.btnn:hover {
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding-top: 25px;
+    color: #fff;
+    text-align: center;
+}
+.form .link a {
+    text-decoration: none;
+    color: #ff7200;  /* Changed to orange */
+    font-weight: bold;
+}
+.form .link a:hover {
+    color: #fff;  /* Optional: change hover color to white */
+}
+
+.form .liw {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #11ff30;
+}

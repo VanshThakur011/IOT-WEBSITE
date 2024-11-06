@@ -30,26 +30,3 @@ h1 {
 h2 {
     color: #e4dddd;
 }
-
-/* Button styling */
-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #f1430e; /* Orange color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-}
-
-button a {
-    color: white;
-    text-decoration: none;
-}
-
-button:hover {
-    background-color: #d0370b; /* Darker shade for hover effect */
-}

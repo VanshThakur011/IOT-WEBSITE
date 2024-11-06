@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panel Monitoring</title>
+    <link rel="stylesheet" href="4488.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+        iframe {
+            width: 100%;
+            max-width: 450px;
+            height: 300px;
+            border: 1px solid #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CLOUD DATA</h1>
+    </header>
+    <div class="iframe-container">
+        <iframe src="https://thingspeak.com/channels/2698487/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe src="https://thingspeak.com/channels/2698487/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe src="https://thingspeak.com/channels/2698487/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe src="https://thingspeak.com/channels/2698487/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe src="https://thingspeak.com/channels/2698487/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe src="https://thingspeak.com/channels/2698487/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe src="https://thingspeak.com/channels/2698487/charts/7?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+    </div>
+    <button><a href="HOMEPAGE.HTML">HOMEPAGE</a></button>
+
+</body>
+</html>

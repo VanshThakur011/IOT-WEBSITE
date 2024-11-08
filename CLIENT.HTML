@@ -8,17 +8,18 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
         function validateLogin(event) {
-            event.preventDefault(); // Prevent form submission
+            // Prevent the form from submitting by default
+            event.preventDefault();
 
-            // Define correct email and password
-            const correctEmail = "client@example.com";
+            // Define the correct email and password
+            const correctEmail = "vansh.thakur24@st.niituniversity.in";
             const correctPassword = "client123";
 
             // Get the input values
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
 
-            // Check credentials
+            // Check if the credentials match
             if (email === correctEmail && password === correctPassword) {
                 alert("Login successful!");
                 // Redirect to Login.html
@@ -33,11 +34,10 @@
 
     <div class="form">
         <h2>CLIENT</h2>
-        <!-- Added IDs to input fields for validation -->
+        <!-- Wrap the login elements in a form and call validateLogin on submit -->
         <form onsubmit="validateLogin(event)">
             <input type="email" id="email" placeholder="Enter Email Here" required>
             <input type="password" id="password" placeholder="Enter Password Here" required>
-            <!-- Submit button calls validateLogin function -->
             <button type="submit" class="btnn">Login</button>
         </form>
 

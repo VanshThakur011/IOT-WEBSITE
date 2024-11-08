@@ -6,14 +6,36 @@
     <!-- Add ICONS Library -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function validateLogin() {
+            // Define correct email and password
+            const correctEmail = "vansh.thakur24@st.university.in";
+            const correctPassword = "admin123";
+
+            // Get the input values
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            // Check credentials
+            if (email === correctEmail && password === correctPassword) {
+                alert("Login successful!");
+                // Redirect to Login.html or other desired page
+                window.location.href = "Login.html";
+            } else {
+                alert("Incorrect email or password. Please try again.");
+            }
+        }
+    </script>
 </head>
 <body>
 
     <div class="form">
         <h2>ADMIN</h2>
-        <input type="email" name="email" placeholder="Enter Email Here">
-        <input type="password" name="" placeholder="Enter Password Here">
-        <button class="btnn"><a href="Login.html">Login</a></button>
+        <!-- Added IDs to input fields for validation -->
+        <input type="email" id="email" placeholder="Enter Email Here" required>
+        <input type="password" id="password" placeholder="Enter Password Here" required>
+        <!-- Update button to call validateLogin() on click -->
+        <button class="btnn" onclick="validateLogin()">Login</button>
 
         <p class="link">Don't have an account?<br>
         <a href="#">Sign up</a> here</p>

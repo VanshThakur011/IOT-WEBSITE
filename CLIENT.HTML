@@ -7,9 +7,11 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
-        function validateLogin() {
+        function validateLogin(event) {
+            event.preventDefault(); // Prevent form submission
+
             // Define correct email and password
-            const correctEmail = "vansh.thakur24st.niituniversity.in";
+            const correctEmail = "client@example.com";
             const correctPassword = "client123";
 
             // Get the input values
@@ -19,8 +21,8 @@
             // Check credentials
             if (email === correctEmail && password === correctPassword) {
                 alert("Login successful!");
-                // Redirect to Login.html or other desired page
-                window.location.href = "login.html";
+                // Redirect to Login.html
+                window.location.href = "Login.html";
             } else {
                 alert("Incorrect email or password. Please try again.");
             }
@@ -32,10 +34,12 @@
     <div class="form">
         <h2>CLIENT</h2>
         <!-- Added IDs to input fields for validation -->
-        <input type="email" id="email" placeholder="Enter Email Here" required>
-        <input type="password" id="password" placeholder="Enter Password Here" required>
-        <!-- Update button to call validateLogin() on click -->
-        <button class="btnn" onclick="validateLogin()">Login</button>
+        <form onsubmit="validateLogin(event)">
+            <input type="email" id="email" placeholder="Enter Email Here" required>
+            <input type="password" id="password" placeholder="Enter Password Here" required>
+            <!-- Submit button calls validateLogin function -->
+            <button type="submit" class="btnn">Login</button>
+        </form>
 
         <p class="link">Don't have an account?<br>
         <a href="#">Sign up</a> here</p>
